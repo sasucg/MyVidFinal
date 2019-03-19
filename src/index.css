@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+	display: inline;
+	position: relative;
+	font: 100px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(0,0,255,0.5); 
+}
+
+h1:after {
+	content: "Welcome!";
+	position: absolute; left: 5px; top: 2px;
+	color: rgba(255,0,0,0.5);   
+}
+
+.video-control{
+  width: 100%;
+  background-color: aqua;
+  font-weight: bold;
+}
+
+.myPlayer{
+  background: #f4f4f4;
+  border-radius: 25px;
+  width: 50%;
+  height: 50px;
+  margin: 15px 0;
+  position: absolute;
+  left: 395px;
+  
+}
+
+.btn {
+  background-color: #26c8d0;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background-color: cyan
+}
+
+
+.slidecontainer {
+  width: 50%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 10px;
+  border-radius: 5px;
+  background: #26c8d0;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+  background-color: cyan;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+
+
+
+.volume-bar {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 10px;
+  border-radius: 5px;
+  background: #26c8d0;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.volume-bar::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.volumbe-bar:hover{
+  background-color: cyan;
+}
+
