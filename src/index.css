@@ -107,7 +107,7 @@ h1:after {
 
 .volume-bar {
   -webkit-appearance: none;
-  width: 50%;
+  width: 100px;
   height: 10px;
   border-radius: 5px;
   background: #26c8d0;
