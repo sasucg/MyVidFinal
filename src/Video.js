@@ -77,18 +77,20 @@ class Video extends Component{
             <div>
 
             <video ref={this.myRef} className="myVideo" src={vid} type="video/mp4" onTimeUpdate={this.handleTimeUpdate} />
+
             <div className="myControls">
-            <hr/>
-            Videoclipul: {parseInt(this.state.currentTime, 10)} / {this.state.duration}
+            <button onClick={this.playVideo.bind(this)} className="btn"><i class="fas fa-play"></i></button>
+            <button onClick={this.stopVideo.bind(this)} className="btn"><i class="fas fa-stop"></i></button>
+            
+
+            {parseInt(this.state.currentTime, 10)} / {this.state.duration}
+          
             <PlayerBar 
                 currentTime={this.state.currentTime}
                 onCurrentTimeChange={this.handleCurrentTimeChange}
             />
  
-            <button onClick={this.playVideo.bind(this)} className="btn"><i class="fas fa-play"></i></button>
-            <button onClick={this.stopVideo.bind(this)} className="btn"><i class="fas fa-stop"></i></button>
-            <button className="btn" onClick={this.toggleFullscreen}><i class="fas fa-arrows-alt"></i></button>
-
+           
 
             <section id="volume-control">
                     <div className="volumbe-container">{this.props.currentVolume}</div>
@@ -105,7 +107,7 @@ class Video extends Component{
 
                         <div className="total-volume">{this.props.length}</div>
             </section>
-                
+            <button className="btn" onClick={this.toggleFullscreen}><i class="fas fa-arrows-alt"></i></button>
                 
             </div>
             </div>

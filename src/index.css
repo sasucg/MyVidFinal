@@ -49,8 +49,8 @@ h1:after {
   background-color: #26c8d0;
   border: none;
   color: rgb(0, 0, 0);
-  padding: 20px;
-
+  padding: 5px;
+  
   display: inline-block;
   font-size: 15px;
   margin: 4px 2px;
@@ -69,7 +69,7 @@ h1:after {
 
 .slider {
   -webkit-appearance: none;
-  width: 50%;
+  width: 325px;
   height: 10px;
   border-radius: 5px;
   background: #26c8d0;
@@ -87,8 +87,8 @@ h1:after {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: rgb(0, 0, 0);
   cursor: pointer;
@@ -120,8 +120,8 @@ h1:after {
 .volume-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: rgb(0, 0, 0);
   cursor: pointer;
@@ -139,3 +139,12 @@ h1:after {
   background-color: cyan;
 }
 
+.myControls{ 
+  weight: 150px;
+  background-color:grey;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  left: 448px;
+  top: 460px;
+}
